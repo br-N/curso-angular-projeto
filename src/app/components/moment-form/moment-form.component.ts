@@ -47,9 +47,6 @@ export class MomentFormComponent {
     if (this.momentForm.invalid) {
       return;
     }
-
-    console.log(this.momentForm.value);
-
     this.onSubmit.emit(this.momentForm.value);
   }
 }
